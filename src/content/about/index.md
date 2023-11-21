@@ -1,5 +1,5 @@
 ---
-title: "I’m John Doe, A content writer based in LDN, Currently at Bookworm"
+title: "I’m Kaniel Kirby, a software developer."
 meta_title: "About"
 image: "/images/author.png"
 draft: false
@@ -7,17 +7,13 @@ draft: false
 what_i_do:
   title: "What I Do"
   items:
-  - title: "Content Writing"
-    description: "Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus eget ipsum elementum venenatis."
+  - title: "Frontend Development"
+    description: I have experience building out beautiful user interfaces using TypeScript, React, Astro, and Vue. 
   
-  - title: "Photography"
-    description: "Aenean maximus urna magna elementum, quis rutrum mi semper non purus eget ipsum venenatis."
+  - title: "Backend Development"
+    description: I'm confident in building out RESTful APIs and other backend services using Django, Golang, and Node.js.
   
-  - title: "Web Research"
-    description: "Aenean maximus urna magna elementum venenatis, quis semper non purus eget ipsum venenatis."
+  - title: "Design and Prototyping"
+    description: I have experience using Figma and Adobe XD to design and prototype user interfaces.
 
 ---
-
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis quis non purus.
-
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis, aenean maximus urna magna elementum.
