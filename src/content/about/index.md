@@ -1,7 +1,7 @@
 ---
 title: "I’m Kaniel Kirby, a software developer."
 meta_title: "About"
-image: "/images/author.png"
+image: "/images/author.webp"
 draft: false
 
 what_i_do:
