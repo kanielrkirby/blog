@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "logo": "/images/logo.svg",
     "logo_width": "100",
     "logo_height": "100",
     "logo_text": "Kaniel's Blog"
@@ -18,12 +18,12 @@
 
   "metadata": {
     "meta_author": "Kaniel Kirby",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "@images/og-image.png",
     "meta_description": "Kaniel Kirby's blog about programming, technology, and life."
   },
 
   "params": {
-    "contact_form_action": "#",
+    "contact_form_action": "https://formsubmit.co/kanielrkirby@runbox.com",
     "copyright": ""
   },
 
