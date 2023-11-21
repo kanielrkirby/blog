@@ -13,7 +13,7 @@ const posts = await getSinglePage("posts");
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await post.render();
-const { title, description, authors, categories, image, date, tags } =
+const { title, description, authors, categories, image, date, tags, image_alt } =
   post.data;
 ---
 
@@ -82,7 +82,7 @@ const { title, description, authors, categories, image, date, tags } =
             src={image}
             height={500}
             width={1000}
-            alt={title}
+            alt={image_alt ?? title}
             class="rounded-lg"
           />
         )}
@@ -93,13 +93,13 @@ const { title, description, authors, categories, image, date, tags } =
           <Content />
         </div>
         <div class="flex flex-wrap items-center justify-between">
-          <ul class="mr-4 mb-4 space-x-3">
+          <ul class="flex flex-wrap items-start gap-4">
             {
               tags.map((tag: string) => (
                 <li class="inline-block">
                   <a
                     href={`/tags/${slugify(tag)}`}
-                    class="block rounded-lg bg-theme-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
+                    class="block italic rounded-lg bg-theme-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
                   >
                     #{humanize(tag)}
                   </a>
