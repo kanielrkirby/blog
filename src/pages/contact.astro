@@ -41,7 +41,7 @@ const { title, description, meta_title, image } = entry.data;
           </ul>
         </div>
         <div class="sm:col-7 md:col-8">
-          <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>
+          <form class="contact-form row gy-2 justify-center" method="POST" action="https://formsubmit.co/kanielrkirby@runbox.com">
             <div class="lg:col-6">
               <label class="mb-2 block" for="name">Name <span class="text-red-600">*</span></label>
               <input class="form-input w-full" name="name" type="text" required />
@@ -67,6 +67,7 @@ const { title, description, meta_title, image } = entry.data;
             </div>
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_next" value="https://blog.kanielrkirby.com/thanks" />
+            <input type="hidden" name="_url" value="https://blog.kanielrkirby.com/contact" />
           </form>
         </div>
       </div>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^0.16.0",
+    "@astrojs/react": "^3.0.5",
     "@astrojs/rss": "^2.1.0",
     "astro": "^3.5.5",
     "date-fns": "^2.29.3",
@@ -16,10 +17,11 @@
     "fuse.js": "^6.6.2",
     "github-slugger": "^2.0.0",
     "marked": "^4.2.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
-    "@astrojs/react": "^2.0.2",
     "@astrojs/sitemap": "^1.0.1",
     "@astrojs/tailwind": "^3.0.1",
     "@tailwindcss/forms": "^0.5.3",
@@ -30,8 +32,6 @@
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-tailwindcss": "^0.2.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "sass": "^1.58.1",
     "sharp": "^0.31.3",
     "tailwind-bootstrap-grid": "^5.0.1",
