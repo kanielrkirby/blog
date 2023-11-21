@@ -12,7 +12,8 @@
       "@config/*": ["./src/config/*"],
       "@content/*": ["./src/content/*"],
       "@styles/*": ["./src/styles/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@lib/*": ["./src/lib/*"],
+      "@images/*": ["./src/images/*"]
     }
   }
 }
