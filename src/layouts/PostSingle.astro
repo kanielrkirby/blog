@@ -11,32 +11,11 @@ import { BiCalendarEdit,BiCategoryAlt } from "react-icons/bi/index.js";
 const allAuthors = await getSinglePage("authors");
 const posts = await getSinglePage("posts");
 const { post } = Astro.props;
-if (new Date(post.data.date).getTime() > new Date().getTime()) {
-}
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await post.render();
 const { title, description, authors, categories, image, date, tags, image_alt } =
   post.data;
 ---
-
-<script>
-  // if date is in future, redirect to 404
-  const elems = document.querySelectorAll("main section article div ul li") as NodeListOf<HTMLElement>;
-  let date;
-  elems.forEach((elem) => {
-    if (new Date(elem.innerText).getTime()) {
-      date = elem.innerText;
-    }
-  });
-
-  if (date) {
-    if (new Date(date).getTime() > new Date().getTime()) {
-      window.location.href = "/404";
-    } else {
-      console.log("date is not in future")
-    }
-  }
-</script>
 
 <section class="section">
   <div class="container">

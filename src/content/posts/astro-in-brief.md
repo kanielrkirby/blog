@@ -1,7 +1,7 @@
 ---
 title: "Astro, in Brief"
 description: "Here, I want to go through as much of Astro as I can in as little time as possible. I'll explain what it is, when to use it, and what all the hype is about."
-date: 2023-11-22T14:00:00Z
+date: 2023-11-24T14:00:00Z
 image: "/images/posts/astro-in-brief/pexels-killian-eon-2868665.jpg"
 image_alt: "Photo by Killian Eon: https://www.pexels.com/photo/star-trail-photography-2868665/"
 categories: ["tutorial"]
