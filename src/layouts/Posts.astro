@@ -12,7 +12,11 @@ const { className, posts, fluid } = Astro.props;
 
 <div class={`row gy-5 gx-4 ${className} ${posts.length == 1 ? "justify-center" : ""} `}>
   {
-    posts.map((post: any, i: number) => (
+    posts.filter((post: any) => {
+      if (!post?.data?.date) return false;
+        return new Date(post.data.date) < new Date();
+      })
+    .map((post: any, i: number) => (
       <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
         {post.data.image && (
           <a href={`/${post.slug}`} class="rounded-lg block hover:text-primary overflow-hidden group">

@@ -24,9 +24,8 @@ interface SearchResult {
 export default function SearchBar({ searchList }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
-  const [searchResults, setSearchResults] = useState<SearchResult[] | null>(
-    null
-  );
+  const [searchResults, setSearchResults] = useState<SearchResult[] | null>(null);
+  const [filteredSearchResults, setFilteredSearchResults] = useState<SearchResult[] | null>(null)
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
     setInputVal(e.currentTarget.value);
@@ -38,6 +37,14 @@ export default function SearchBar({ searchList }: Props) {
     minMatchCharLength: 2,
     threshold: 0.5,
   });
+
+  useEffect(() => {
+    if (!searchResults || !searchResults.length) return;
+    setFilteredSearchResults(searchResults.filter((result) => {
+      const date = new Date(result.item.data.date);
+      return new Date(date) < new Date();
+    }));
+  }, [searchResults]);
 
   useEffect(() => {
     const searchUrl = new URLSearchParams(window.location.search);
@@ -59,9 +66,9 @@ export default function SearchBar({ searchList }: Props) {
       searchParams.set("q", inputVal);
       const newRelativePathQuery =
         window.location.pathname + "?" + searchParams.toString();
-      history.pushState(null, "", newRelativePathQuery);
+      history.replaceState(null, "", newRelativePathQuery);
     } else {
-      history.pushState(null, "", window.location.pathname);
+      history.replaceState(null, "", window.location.pathname);
     }
   }, [inputVal]);
 
@@ -75,14 +82,13 @@ export default function SearchBar({ searchList }: Props) {
         value={inputVal}
         onChange={handleChange}
         autoComplete="off"
-        autoFocus
         ref={inputRef}
       />
 
       {inputVal.length > 1 && (
         <div className="my-6 text-center">
-          Found {searchResults?.length}
-          {searchResults?.length && searchResults?.length === 1
+          Found {filteredSearchResults?.length}
+          {filteredSearchResults?.length && filteredSearchResults?.length === 1
             ? " result"
             : " results"}{" "}
           for '{inputVal}'
@@ -90,7 +96,7 @@ export default function SearchBar({ searchList }: Props) {
       )}
 
       <div className="row">
-        {searchResults?.map(({ item }) => (
+        {filteredSearchResults?.map(({ item }) => (
           <div key={item.slug} className={"col-12 mb-8 sm:col-6"}>
             {item.data.image && (
               <a href={`/${item.slug}`} className="rounded-lg block hover:text-primary overflow-hidden group">
