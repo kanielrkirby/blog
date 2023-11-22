@@ -6,7 +6,7 @@ image: "/images/posts/quick-sort-and-merge-sort-explained/pexels-pixabay-159045.
 image_alt: "Photo by Pixabay: https://www.pexels.com/photo/gray-standard-color-book-near-green-eraser-159045/"
 categories: ["tutorial"]
 authors: ["Kaniel Kirby"]
-tags: ["tutorial", "beginner", "algorithms", "sorting", "quick sort", "merge sort", "javascript", "typescript"]
+tags: ["tutorial", "beginner", "algorithms", "sorting", "quick sort", "merge sort", "javascript", "typescript", "data structures"]
 draft: false
 ---
 
