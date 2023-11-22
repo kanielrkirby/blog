@@ -1,7 +1,7 @@
 ---
 title: "CRON Jobs, Simplified"
 description: "Here, I'll explain what CRON jobs are, how to use them, and show a basic example of them in GitHub Actions/Workflows."
-date: 2023-11-20T03:21:56Z
+date: 2023-11-21T03:21:56Z
 image: "/images/posts/cron-jobs/pexels-andrey-grushnikov-707676.jpg"
 image_alt: "Photo by Andrey Grushnikov: https://www.pexels.com/photo/black-and-white-photo-of-clocks-707676/"
 categories: ["tutorial"]

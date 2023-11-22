@@ -1,7 +1,7 @@
 ---
 title: "SCSS - For The Experienced Developer"
 description: "Sometimes, you just want to speed through the \"what's different\" and \"the gotchas\", and don't want to be explained how a variable/for-loop works for 2 paragraphs. This is that guide."
-date: 2023-10-20T03:21:56Z
+date: 2023-11-21T12:35:22Z
 image: "/images/posts/scss-for-the-experienced-developer/pexels-olia-danilevich-4974915.jpg"
 image_alt: "Photo by olia danilevich: https://www.pexels.com/photo/man-sitting-in-front-of-three-computers-4974915/"
 categories: ["tutorial"]
@@ -677,7 +677,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:math` (`sin()`, `cos()`, `pow()`)</summary>
+  <summary>sass:math</summary>
 
   ```scss
   @use 'sass:math';
@@ -702,7 +702,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:string` (`str-length()`, `str-insert()`, `str-slice()`)</summary>
+  <summary>sass:string</summary>
 
   ```scss
   @use 'sass:string';
@@ -727,7 +727,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:color` (`lighten()`, `darken()`, `mix()`)</summary>
+  <summary>sass:color</summary>
   
   ```scss
   @use 'sass:color';
@@ -779,7 +779,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:list` (`length()`, `nth()`, `append()`, `join()`, `zip()`)</summary>
+  <summary>sass:list</summary>
 
   ```scss
   @use 'sass:list';
@@ -804,7 +804,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:map` (`keys()`, `values()`, `has-key()`, `merge()`, `remove()`)</summary>
+  <summary>sass:map</summary>
 
   ```scss
   @use 'sass:map';
@@ -828,7 +828,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:meta` (`type-of()`, `inspect()`, `call()`)</summary>
+  <summary>sass:meta</summary>
 
   ```scss
   @use 'sass:meta';
@@ -859,7 +859,7 @@ SCSS has a few built-in modules that are imported into your file using `@use`. H
 
   ---
 
-  <summary>`sass:selector` (`is-superselector()`, `simple-selectors()`, `selector-nest()`, `selector-append()`, `selector-replace()`)</summary>
+  <summary>sass:selector</summary>
 
   ```scss
   @use 'sass:selector';
