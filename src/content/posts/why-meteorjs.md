@@ -1,8 +1,8 @@
 ---
-title: "MeteorJS Quick Guide"
+title: "Why MeteorJS?"
 description: "I've been wondering... Why use this framework over Next, Gatsby, Astro, etc.? Well, today, I'm going to do my best to find a decent answer to that question!"
 date: 2023-11-22T14:00:00Z
-image: "/images/posts/meteorjs-quick-guide/pexels-alex-andrews-5086477.jpg"
+image: "/images/posts/why-meteorjs/pexels-alex-andrews-5086477.jpg"
 image_alt: "Photo by Alex Andrews: https://www.pexels.com/photo/comet-in-space-5086477/"
 categories: ["tutorial"]
 authors: ["Kaniel Kirby"]
