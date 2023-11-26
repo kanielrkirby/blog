@@ -65,4 +65,6 @@ You can't expect to have a ton of motivation when you don't know what you want. 
 
 ## Conclusion
 
-This article contains a lot of obvious advice, I know. But we often overcomplicate achieving our goals, in my opinion. I hope this article helped you in some way, and if it did, please share it with someone else who might need it!
+This article contains a lot of obvious advice, I know. But we often overcomplicate achieving our goals, in my opinion. I hope this article helped you in some way, and if it did, please share it!
+
+If you have any questions, comments, or concerns, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/kanielrkirby/).
