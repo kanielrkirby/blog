@@ -1,7 +1,7 @@
 ---
 title: "Quick Sort and Merge Sort, Explained"
 description: "A quick explanation of quick sort and merge sort, two common sorting algorithms, and when and where you might actually use them."
-date: 2023-11-23T02:00:00Z
+date: 2023-11-23T02:00:00-06:00
 image: "/images/posts/quick-sort-and-merge-sort-explained/pexels-pixabay-159045.jpg"
 image_alt: "Photo by Pixabay: https://www.pexels.com/photo/gray-standard-color-book-near-green-eraser-159045/"
 categories: ["tutorial"]

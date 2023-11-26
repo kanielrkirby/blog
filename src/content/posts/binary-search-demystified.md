@@ -1,7 +1,7 @@
 ---
 title: "Binary Search Demystified"
 description: "Here, I'll explain what binary search is, how it works, and show a basic example of it in TypeScript."
-date: 2023-11-25T14:00:00Z
+date: 2023-11-25T14:00:00-06:00
 image: "/images/posts/binary-search-demystified/pexels-skitterphoto-63901.jpg"
 image_alt: "Photo by Skitterphoto: https://www.pexels.com/photo/black-binocular-on-round-device-63901/"
 categories: ["tutorial"]

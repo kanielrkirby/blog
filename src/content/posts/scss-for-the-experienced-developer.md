@@ -1,7 +1,7 @@
 ---
 title: "SCSS - For The Experienced Developer"
 description: "Sometimes, you just want to speed through the \"what's different\" and \"the gotchas\", and don't want to be explained how a variable/for-loop works for 2 paragraphs. This is that guide."
-date: 2023-11-21T12:35:22Z
+date: 2023-11-21T12:35:22-06:00
 image: "/images/posts/scss-for-the-experienced-developer/pexels-olia-danilevich-4974915.jpg"
 image_alt: "Photo by olia danilevich: https://www.pexels.com/photo/man-sitting-in-front-of-three-computers-4974915/"
 categories: ["tutorial"]

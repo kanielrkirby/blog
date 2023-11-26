@@ -1,7 +1,7 @@
 ---
 title: "Linked Lists, Stacks, and Queues"
 description: "Quick overview of linked lists, stacks, and queues, and how to implement them in JavaScript."
-date: 2023-11-27T14:00:00Z
+date: 2023-11-27T14:00:00-06:00
 image: "/images/posts/linked-lists-stacks-and-queues/pexels-lukas-574071.jpg"
 image_alt: "Photo by Lukas: https://www.pexels.com/photo/person-encoding-in-laptop-574071/"
 categories: ["tutorial"]

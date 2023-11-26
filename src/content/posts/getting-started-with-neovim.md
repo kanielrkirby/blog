@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Neovim"
 description: "I found NeoVim a little over half a year ago, and have fallen in love with it. Here, I want to show you why, and how to get started with it."
-date: 2023-11-26T14:00:00Z
+date: 2023-11-26T14:00:00-06:00
 image: "/images/posts/getting-started-with-neovim/pexels-pixabay-207580.jpg"
 image_alt: "Photo by Pixabay: https://www.pexels.com/photo/blur-bright-business-codes-207580/"
 categories: ["tutorial"]
