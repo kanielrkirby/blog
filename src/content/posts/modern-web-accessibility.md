@@ -1,5 +1,5 @@
 ---
-title: "Modern Web Accessibility"
+title: "Modern Web Accessibility with Pope Tech"
 description: "A brief overview of improving web accessibility with Pope Tech."
 date: 2024-01-14T14:00:00-06:00
 image: "/images/posts/modern-web-accessibility/People Inside Building.jpg"
