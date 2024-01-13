@@ -10,4 +10,4 @@ social:
   email: kanielrkirby@runbox.com
 ---
 
-I'm Kaniel. About a year ago, I dropped my restaurant job to pursue web development, and have been doing it ever since. I'm extremely passionate about connecting with people, accessibility, and continuous learning. Confident in my abilities surrounding everything in the stack, from React and Vue, to Django and Golang, to anything SQL. In my free time, I'm a privacy/security enthusiast, and love to make music.
+I'm Kaniel. In 2022, I dropped my restaurant job to pursue web development, and have been doing it ever since. I'm extremely passionate about connecting with people, accessibility, and continuous learning. Confident in my abilities surrounding everything in the stack, from React and Vue, to Django and Golang, to anything SQL. In my free time, I'm a privacy/security enthusiast, and love to make music.
