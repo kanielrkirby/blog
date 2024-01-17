@@ -2,7 +2,7 @@
 title: "Git - First Project"
 description: "Git. That scary thing you should probably know. But it really isn't that scary. Let's start small."
 date: 2024-01-22T14:00:00-06:00
-image: "/images/posts/git-first-project/pexels-ivan-samkov-7213438"
+image: "/images/posts/git-first-project/Dev Photos Ivan Samkov.jpg"
 image_alt: "Photo by Ivan Samkov: https://www.pexels.com/photo/handwritten-people-desk-laptop-7213438/"
 categories: ["git", "github"]
 authors: ["Kaniel Kirby"]
