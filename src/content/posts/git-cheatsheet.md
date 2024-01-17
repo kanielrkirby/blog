@@ -6,7 +6,7 @@ image: "/images/posts/git-cheatsheet/git-logo.webp"
 image_alt: "Git Logo"
 categories: ["git", "github"]
 authors: ["Kaniel Kirby"]
-tags: ["git", "github", "overview", "tutorial", "beginner", "version-control", "source-control"]
+tags: ["git", "github", "overview", "tutorial", "beginner", "version-control", "source-control", "cheatsheet"]
 draft: false
 ---
 
