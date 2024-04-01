@@ -7,7 +7,7 @@ image_alt: "Git Logo"
 categories: ["git", "github"]
 authors: ["Kaniel Kirby"]
 tags: ["git", "github", "overview", "tutorial", "beginner", "version-control", "source-control"]
-draft: false
+draft: true
 ---
 
 Knowing what a tool is capable of is more important than knowing the fine details of every feature. Having a good mental model of what a tool can do will help you use it more effectively, and leverage it to its full potential.

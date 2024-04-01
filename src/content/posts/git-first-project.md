@@ -7,7 +7,7 @@ image_alt: "Photo by Ivan Samkov: https://www.pexels.com/photo/handwritten-peopl
 categories: ["git", "github"]
 authors: ["Kaniel Kirby"]
 tags: ["git", "github", "overview", "tutorial", "beginner", "version-control", "source-control", "first-project"]
-draft: false
+draft: true
 ---
 
 ---

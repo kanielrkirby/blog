@@ -1,10 +1,10 @@
 ---
 title: "NixOS is Perfect, but You Probably Shouldn't Use It"
 description: "At least as a beginner in Linux, general programming, or troubleshooting."
-date: 2024-04-01T14:00:00-06:00
-image: "/images/posts/"
-image_alt: ""
-categories: ["operating-systems"]
+date: 2024-04-10T14:00:00-06:00
+image: "https://images.pexels.com/photos/1424745/pexels-photo-1424745.jpeg"
+image_alt: "Photo by Hasan Albari on Pexels"
+categories: ["nix"]
 authors: ["Kaniel Kirby"]
 tags: ["nixos", "nix", "linux", "operating-systems", "package-management"]
 draft: false
@@ -40,7 +40,7 @@ Nix has been around long enough to come up with several opposing ideas. An examp
 
 ## Nix Documentation is Significantly Lacking
 
-With all of this extra complexity, through the history and abstractions and functional language, you would hope (or rather, expect) that things would be well documented. Unfortunately, this is not the case with NixOS.
+With all of this extra complexity, through the history, and abstractions, and the language itself, you would hope (or rather, expect) that things would be well documented. Unfortunately, this is not the case with NixOS.
 
 As a beginner, you're going to need to learn to read documentation. That's true for anything. But with Nix, you have to learn to scour the web for information, looking through forum, GitHub issues, articles, and sometimes (but only sometimes) the official NixOS documentation.
 
