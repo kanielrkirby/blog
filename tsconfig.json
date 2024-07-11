@@ -1,19 +1,6 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "baseUrl": ".",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "paths": {
-      "@layouts/*": ["./src/layouts/*"],
-      "@components/*": ["./src/layouts/components/*"],
-      "@partials/*": ["./src/layouts/partials/*"],
-      "@shortcodes/*": ["./src/layouts/shortcodes/*"],
-      "@config/*": ["./src/config/*"],
-      "@content/*": ["./src/content/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@lib/*": ["./src/lib/*"],
-      "@images/*": ["./src/images/*"]
-    }
+    "strictNullChecks": true
   }
 }
