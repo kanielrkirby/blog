@@ -21,7 +21,7 @@ const searchList = sortedPosts.map(({ data, slug }) => ({
 }));
 ---
 
-<Layout title={`Search | ${SITE.title}`}>
+<Layout title={`Search | ${SITE.title}`} img="https://img.freepik.com/free-vector/binary-code-concept-illustration_114360-6698.jpg?t=st=1721417851~exp=1721421451~hmac=ac3d5ca8f170f901ad7bc49f648f058885466553ff6bebb984cd8165b87960ba&w=996">
   <Header />
   <Main pageTitle="Search" pageDesc="Search any article ...">
     <SearchBar client:load searchList={searchList} />

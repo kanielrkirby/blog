@@ -11,7 +11,7 @@ tags:
   - Development Environments
   - Tutorial
 featured: true
-img: https://raw.githubusercontent.com/NixOS/nixos-artwork/56b7a5788005a3eaecb5298f0dbed0f7d1573abc/wallpapers/nix-wallpaper-nineish-dark-gray.svg
+img: https://raw.githubusercontent.com/NixOS/nixos-artwork/56b7a5788005a3eaecb5298f0dbed0f7d1573abc/wallpapers/nix-wallpaper-nineish-dark-gray.png
 alt: Nineish NixOS Wallpaper from the NixOS/nixos-artwork repo.
 # canonicalURL:
 # draft: true

@@ -1,6 +1,8 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: About
+desc: My story, thus far, on my journey into software development, and just life in general.
+img: https://media.licdn.com/dms/image/D5603AQGQLL0SH1usaw/profile-displayphoto-shrink_400_400/0/1690647304915?e=1726704000&v=beta&t=9DFg6ysEJ4UEZ3ZQ6m6I5l8Ft0NgYOX1pl9hHxBBGtA
 ---
 
 👋 Hey there! My name's Kaniel.
