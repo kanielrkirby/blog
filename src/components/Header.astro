@@ -1,4 +1,11 @@
-<header transition:name="header" class="flex w-full justify-center border-b-2 border-black z-50 bg-skin-fill">
+---
+import Logo from "@components/Logo.astro";
+---
+
+<header
+  transition:name="header"
+  class="z-50 flex w-full justify-center border-b-2 border-black bg-skin-fill dark:border-skin-line"
+>
   <div class="flex w-full max-w-[48rem] justify-between gap-2 px-4 py-2">
     <a
       id="skip-to-content"
@@ -10,6 +17,11 @@
       class="scramble-hover translate-y-1.5 text-nowrap py-1 font-mono text-xl font-normal text-skin-base transition-colors duration-150 hover:text-skin-accent max-sm:hidden sm:translate-y-1 sm:text-2xl"
     >
       The <bold class="font-bold">Cached </bold> Exception
+    </a>
+    <a href="/" class="">
+      <Logo
+        class="h-full w-auto fill-black sm:hidden dark:fill-white dark:opacity-80 hover:scale-110 hover:fill-skin-accent transition-all duration-150 hover:opacity-100"
+      />
     </a>
     <details
       id="menu-items"
