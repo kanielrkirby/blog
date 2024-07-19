@@ -15,7 +15,7 @@ function withOpacity(variableName, opacity) {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: ['selector', '[data-theme="dark"]'],
+  darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     nbShadow: {
       1: 1,
@@ -65,7 +65,26 @@ module.exports = {
           accent: withOpacity("--color-accent"),
         },
       },
+      colors: {
+        skin: {
+          fill: withOpacity("--color-fill"),
+          "fill-dark": withOpacity("--color-fill-dark"),
+          inverted: withOpacity("--color-text-base"),
+          card: withOpacity("--color-card"),
+          "card-muted": withOpacity("--color-card-muted"),
+          base: withOpacity("--color-text-base"),
+          line: withOpacity("--color-border"),
+          accent: withOpacity("--color-accent"),
+        },
+      },
       fill: {
+        skin: {
+          base: withOpacity("--color-text-base"),
+          accent: withOpacity("--color-accent"),
+        },
+        transparent: "transparent",
+      },
+      stroke: {
         skin: {
           base: withOpacity("--color-text-base"),
           accent: withOpacity("--color-accent"),

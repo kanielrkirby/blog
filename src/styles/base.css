@@ -1,6 +1,6 @@
-@import "@fontsource/courier-prime";
-@import "@fontsource/monaspace-neon";
-@import "@fontsource/noto-sans-mono";
+@import "@fontsource/courier-prime"; /* heading */
+@import "@fontsource/monaspace-neon"; /* code */
+@import "@fontsource/noto-sans-mono"; /* base */
 
 @tailwind base;
 @tailwind components;
@@ -18,13 +18,13 @@
     --color-border: 120, 120, 120;
   }
   html[data-theme="dark"] {
-    --color-fill: 0, 0, 0;
-    --color-fill-dark: 0, 0, 0;
-    --color-text-base: 255, 255, 255;
+    --color-fill: 23, 23, 23;
+    --color-fill-dark: 16, 16, 16;
+    --color-text-base: 210, 210, 210;
     --color-accent: 243, 147, 40;
     --color-card: 50, 50, 50;
-    --color-card-muted: 40, 40, 40;
-    --color-border: 255, 255, 255;
+    --color-card-muted: 33, 33, 33;
+    --color-border: 100, 100, 100;
   }
 
   #sun-svg,
@@ -36,7 +36,7 @@
     display: block;
   }
   body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill font-base text-skin-base selection:bg-skin-accent selection:bg-opacity-40;
+    @apply flex min-h-[100svh] flex-col bg-skin-fill font-base text-skin-base selection:bg-skin-accent selection:bg-opacity-40 dark:selection:bg-opacity-90 dark:selection:text-black;
   }
   h1,
   h2,
@@ -60,7 +60,7 @@
     @apply inline-block h-6 w-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!font-semibold prose-a:!text-skin-base prose-a:!decoration-solid prose-a:underline-offset-[5px] hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:bg-skin-accent prose-blockquote:bg-opacity-[0.075] prose-blockquote:py-4 prose-blockquote:pr-4 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded-sm prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:!my-2 prose-img:mx-auto prose-img:border-2 prose-img:border-skin-line prose-hr:!border-skin-line;
+    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!font-semibold prose-a:!text-skin-base prose-a:!decoration-solid prose-a:underline-offset-[5px] hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:bg-skin-accent prose-blockquote:bg-opacity-[0.075] prose-blockquote:py-4 prose-blockquote:pr-4 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded-sm prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:!my-2 prose-img:mx-auto prose-img:!rounded prose-img:border-2 prose-img:border-skin-line prose-hr:!border-skin-line dark:prose-blockquote:bg-skin-card-muted dark:prose-blockquote:bg-opacity-100;
   }
   .prose blockquote > h2 {
     @apply mt-0;
@@ -123,11 +123,11 @@
   html[data-theme="dark"] {
     .astro-code,
     .astro-code span {
-      background-color: var(--shiki-dark-bg) !important;
       color: var(--shiki-dark) !important;
       font-style: var(--shiki-dark-font-style) !important;
       font-weight: var(--shiki-dark-font-weight) !important;
       text-decoration: var(--shiki-dark-text-decoration) !important;
+      @apply !bg-skin-fill-dark;
     }
   }
 
