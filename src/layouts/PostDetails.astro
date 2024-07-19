@@ -15,8 +15,17 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, authors, desc, img, alt, canonicalURL, published, modified, tags } =
-  post.data;
+const {
+  title,
+  authors,
+  desc,
+  img,
+  alt,
+  canonicalURL,
+  published,
+  modified,
+  tags,
+} = post.data;
 
 const { Content } = await post.render();
 
@@ -41,10 +50,6 @@ const layoutProps = {
 <Layout {...layoutProps}>
   <Header />
 
-  <!-- <div class="progress-container fixed top-0 z-10 h-1 w-full bg-skin-fill">
-    <div class="progress-bar h-1 w-0 bg-skin-accent" id="myBar"></div>
-  </div> -->
-
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
@@ -54,7 +59,8 @@ const layoutProps = {
         ><path
           d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
         ></path>
-      </svg><span>Go back</span>
+      </svg>
+      <span>Go back</span>
     </button>
   </div>
   <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-12">
@@ -65,10 +71,10 @@ const layoutProps = {
       size="lg"
       className="my-2"
     />
-    {
-      imgUrl && alt &&
-      <img src={imgUrl} alt={alt} class="object-center object-cover rounded border-black nb-shadow-4 min-w-[calc(100vw/2)] max-h-[calc(100vh/2.5)] mx-auto" />
-    }
+    <!-- { -->
+    <!-- imgUrl && alt && -->
+    <!-- <img src={imgUrl} alt={alt} loading="lazy" class="object-center object-cover rounded border-black border-2 bg-skin-card max-sm:w-full w-[calc(100vw/3*2)] min-w-[calc(100vw/2)] h-[calc(100vh/2.5)] mx-auto" /> -->
+    <!-- } -->
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>

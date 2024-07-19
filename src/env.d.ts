@@ -3,16 +3,22 @@
 /// <reference types="astro/astro-jsx" />
 declare namespace astroHTML.JSX {
   interface IntrinsicAttributes {
-    scramble?: number | boolean
+    scramble?: number | boolean;
   }
   interface HTMLAttributes {
-    scramble?: number | boolean
+    scramble?: number | boolean;
   }
   interface IntrinsicElements {
-    time: DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement> & {
+    time: DetailedHTMLProps<
+      TimeHTMLAttributes<HTMLTimeElement>,
+      HTMLTimeElement
+    > & {
       scramble?: boolean;
     };
-    time: DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement> & {
+    time: DetailedHTMLProps<
+      HTMLAttributes<HTMLSpanElement>,
+      HTMLSpanElement
+    > & {
       scramble?: boolean;
     };
   }
@@ -20,7 +26,7 @@ declare namespace astroHTML.JSX {
 
 declare namespace React {
   interface Attributes {
-      scramble?: boolean;
+    scramble?: boolean;
   }
 }
 

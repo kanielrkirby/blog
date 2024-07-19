@@ -11,9 +11,9 @@ export interface Props {
   authors?: string[];
   desc?: string;
   img?: string;
-  canonicalURL?: string;
+  canonicalURL?: string | undefined;
   published?: Date;
-  modified?: Date | null;
+  modified?: Date | undefined | null;
   scrollSmooth?: boolean;
 }
 
@@ -123,9 +123,6 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
       )
     }
 
-    <ViewTransitions transition:animate={myFade}/>
-
-    <script is:inline src="/toggle-theme.js"></script>
     <script>
       import scramble from "@utils/scramble.js";
       document.body.classList.remove("opacity-0");
@@ -151,6 +148,8 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
 
       scramble(".scramble-hover", { hover: true });
     </script>
+
+    <script is:inline src="/toggle-theme.js"></script>
     <style>
       @keyframes customFadeIn {
         0% {
@@ -192,6 +191,8 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
         }
       }
     </style>
+
+    <ViewTransitions transition:animate={myFade} />
   </head>
   <body scramble class="opacity-0 transition-transform duration-1000">
     <slot />
