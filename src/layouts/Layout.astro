@@ -2,6 +2,7 @@
 import { LOCALE, SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
+import { myFade } from "@utils/transitions";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -35,6 +36,7 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
 <html
   lang=`${LOCALE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
+  transition:animate={myFade}
 >
   <head>
     <meta charset="UTF-8" />
@@ -95,7 +97,7 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
       )
     }
 
-    <ViewTransitions />
+    <ViewTransitions transition:animate={myFade}/>
 
     <script is:inline src="/toggle-theme.js"></script>
     <script>
@@ -110,8 +112,48 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
         });
       }, 1100)
     </script>
+    <style>
+      @keyframes customFadeIn {
+        0% {
+          translate: 0 5rem;
+          opacity: 0%;
+        }
+
+        100% {
+          translate: 0 0;
+          opacity: 100%;
+        }
+      }
+
+      @keyframes customFadeOut {
+        0% {
+          translate: 0 0;
+          opacity: 100%;
+        }
+
+        100% {
+          translate: 0 -5rem;
+          opacity: 0%;
+        }
+      }
+
+      @keyframes customFadeOutDown {
+        0% {
+          translate: 0 0;
+          opacity: 100%;
+        }
+
+        10% {
+          opacity: 0%;
+        }
+
+        100% {
+          translate: 0 2.5rem;
+          opacity: 0%;
+        }
+      }
+    </style>
   </head>
-  <body>
   <body scramble class="transition-all duration-1000 opacity-0">
     <slot />
   </body>

@@ -57,8 +57,8 @@ const layoutProps = {
       </svg><span>Go back</span>
     </button>
   </div>
-  <main id="main-content">
-    <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
+  <main id="main-content" class="mx-auto w-full max-w-3xl px-4 pb-12">
+    <h1 class="text-2xl font-semibold">{title}</h1>
     <Datetime
       published={published}
       modified={modified}
