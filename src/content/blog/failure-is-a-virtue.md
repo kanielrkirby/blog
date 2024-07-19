@@ -1,58 +1,67 @@
 ---
 # slug:
 title: Failure is a Virtue
-desc: Description
+desc: As the title state, I believe that failure truly is a virtue, one that I have not mastered yet, but one that I am excited about!
 published: 2024-06-01T14:00:00-06:00
 # modified:
 authors:
   - Kaniel Kirby
-# featured: true
-# img: 
-# alt: 
-# canonicalURL: 
-draft: true
+tags:
+  - career advice
+  - failure
+  - software development
+  - personal development
+featured: true
+img: https://images.pexels.com/photos/7203972/pexels-photo-7203972.jpeg
+alt: "Photo by SHVETS production: https://www.pexels.com/photo/carton-box-with-black-word-brain-7203972/"
+# canonicalURL:
+# draft: true
 ---
 
-The feelings I was experiencing were tied to self-worth, to intelligence, to failure. I felt that I would never be worth anything, and that I was desperately trying to escape failure.
+My insecurities around my intelligence, self-worth, and inadequacy had me in a rut again.
 
-When I made a PR, I would spend hours on it, regardless of if it were a small fix, constantly tweaking and changing. I would say things like "What if they say this" over and over, not being able to focus on anything else. And eventually, I produced garbage code because of it. Because the only thing I was focused on was acceptance. And in the end, I got neither. I was told it was the wrong solution.
+When I made a PR, I would tweak it for hours, with no end in sight. "What if they say this", I'd ask myself, and my mental health and code quality declined as a result. Ultimately, I received neither approval nor acceptance, but the simple, terse words "This is not the right solution."
 
-Software is really hard. You're never done learning, you're never done growing, and the moment you're comfortable with where you are, you by definition stop growing by any substantial amount.
+## Software is Hard
 
-Not only this, but there is a neverending pile of work. Work never stops, realistically. You take on task by task, from 9 to 5.
+Software development can be difficult. It's a neverending journey of learning and growth. The moment you feel settled, you cease to grow meaningfully. A perpetually filled-to-the-brim list of tasks, self-doubt bouncing around unchecked.
 
-We prioritize, glamourize, and nearly worship at times, efficiency and productivity. These are not bad virtues by any means, and anyone who pursues them will likely find success in their craft. But I find them very limiting in terms of fulfillment and happiness.
+We glamourize efficiency and productivity, and whilst not bad virtues on their own, I find them restrictive for fulfillment and happiness.
 
-I believe you can derive an amount of satisfaction from software, but meaning? I just don't know if that's what software was made for. We're here to make *other* people's meaning come alive. To fulfill *other* people's aspirations. And most of the time, you won't get to see the expression on their face when they actually see the feature *you* worked on. You'll see a Jira ticket go to the Done column before picking up another, just like it.
+There is some amount of satisfaction from software, but purpose? I just don't know if that's what software was made for. We're here to make _other_ people's visions come alive. To fulfill _other_ people's aspirations. Rarely do we see responses to _our_ work, but rather just a Jira ticket moving to the Done column before we start anew.
 
-To get out of this inevitable rut of trudging through work tickets, I tried contributing to OSS. My goal was to pick up an issue, and take full ownership of seeing it through. I would research what I needed, and come up with a solution, with as little help as possible. 
+## The Failed Promise of Idealism
 
-<blockquote>
-"Am I really this stupid?"
-</blockquote>
-
-<blockquote>
-"Why can't I do anything right?"
-</blockquote>
-
-<blockquote>
-"What's the point? I'll never be a <em>real</em> developer"
-</blockquote>
+> What if I can craft the perfect PR, the first time?
 
 ---
 
-Every once and a while, these sorts of thoughts get to me. I start to wonder if I've been wasting my time.
+Avoid criticism at all costs. This is the dogma one often follows when struggling with imposter syndrome. Critique is one of the oldest fears, after all, and we helplessly tie it to our adequacy, or lack thereof.
 
-## The Cause
+I have flaws, and make mistakes. So what of it? If I quadruple check my work, I will never face the sting of inadequacy, the embarrassment that will certainly follow after I fail in front of my colleagues.
 
-Software development is straightforward, in and of itself. You go to the office (or stay home, if you're one of the lucky few), pick up an issue, research it, test a few solutions, and push the changes. And I don't believe these things are what make it hard at all. We, by the definition of our craft, have access to thousands of resources, from search engines, to forums, to LLMs, and version control isn't the craziest thing, typically involving around 4 commands (`checkout`, `add`, `commit`, `push`).
+Paradoxically, this stunts true growth, and makes it impossible to conquer this fear at all. As I've [talked about before](/posts/a-case-for-discomfort.md), discomfort is the most effective catalyst I've found for growth and learning, and by purposefully avoiding it, you rob yourself of some of the most important lessons.
 
-No, what makes software development so difficult is the ecosystem, the culture, and money, and how these influence our minds fundamentally.
+## Moving Forward
 
-### The Ecosystem
+I've decided that this is simply not the life I want to lead. Failure *is* the learning process. Failure *is* growth. And I'm not willing to forgo growth in this life for safety.
 
-With sites like [Killed By Google](https://killedbygoogle.com/), [Days Since the Last JS Framework](https://dayssincelastjavascriptframework.com/), and [_](https://example.com), it doesn't take long to find out that the software space moves fast.
+But how do we do this effectively? I've compiled a short list of steps *I'll* be taking in the near future, and would love it if you would as well.
 
-### The Culture
+### Set Smaller Goals
 
-When you work for someone, be that in a traditional software job, a startup, or an open source project, you typically are expected to adopt and become part of their culture. This includes simple things, like how to format a commit message in Git, but it also includes complex things, like how to 
+We often, as humans, are bad at estimations. Atomic Habits and Tiny Habits both do a great job of explaining this concept in depth, but the TLDR is that we work better with consistent, small feedback that we're doing the right things. Exercise? Just start for 5 minutes each day. A new project? Take a simpler issue at first. Our jobs, after all, are all about breaking down complex tasks into more manageable ones!
+
+### Check In
+
+As someone who struggles with imposter syndrome, I find myself halting for much too long before asking for help, especially when contributing to OSS. I don't want to get in the way, or mess up the codebase. But this tends to lead to long gaps in between communication, where it's easy to get too invested in the wrong solution. We should be willing to check in with our superiors, and ensure we're on the right track. Most are simply satisfied that you're spending time on their project, and are willing to help out. Just ask!
+
+### Reflect
+
+Failure is not exclusive to external pressures. You should also be willing to look at your own past projects and reflect upon what you think worked, and what might *need* some work.
+
+## Conclusion
+
+I firmly believe that failure is a virtue—a skill I haven't mastered yet, but one I'm eager to learn and grow from. I genuinely hope this article was insightful.
+
+Happy hacking, everybody!
