@@ -14,20 +14,16 @@
       }: {
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
+            nodejs_22
             bun
             pnpm
-            nodejs_22
-            prettierd
             yarn
+            nodePackages_latest.prettier
             nodePackages_latest."@astrojs/language-server"
             nodePackages_latest."@tailwindcss/language-server"
             nodePackages_latest.vscode-langservers-extracted
             nodePackages_latest.tailwindcss
           ];
-
-          shellHook = ''
-            npm i
-          '';
         };
       };
     };
