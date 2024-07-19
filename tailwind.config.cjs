@@ -62,6 +62,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ["Courier Prime", "IBM Plex Mono", "monospace"],
+        code: ["Monaspace Neon", "IBM Plex Mono", "monospace"],
         base: ["Noto Sans Mono"],
       },
 

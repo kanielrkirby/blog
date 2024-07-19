@@ -1,5 +1,6 @@
 @import "@fontsource/courier-prime";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
+@import "@fontsource/monaspace-neon";
+@import "@fontsource/noto-sans-mono";
 
 @tailwind base;
 @tailwind components;
@@ -36,7 +37,12 @@
   body {
     @apply bg-skin-fill text-skin-base selection:bg-skin-accent selection:text-skin-inverted flex min-h-[100svh] flex-col font-base selection:bg-opacity-70;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-mono;
   }
   section,
