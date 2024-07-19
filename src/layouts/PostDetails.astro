@@ -15,7 +15,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, authors, desc, img, canonicalURL, published, modified, tags } =
+const { title, authors, desc, img, alt, canonicalURL, published, modified, tags } =
   post.data;
 
 const { Content } = await post.render();
@@ -65,6 +65,10 @@ const layoutProps = {
       size="lg"
       className="my-2"
     />
+    {
+      imgUrl && alt &&
+      <img src={imgUrl} alt={alt} class="object-center object-cover rounded border-black nb-shadow-4 min-w-[calc(100vw/2)] max-h-[calc(100vh/2.5)] mx-auto" />
+    }
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
@@ -93,15 +97,6 @@ const layoutProps = {
   </main>
   <Footer />
 </Layout>
-
-<style>
-  main {
-    @apply mx-auto w-full max-w-3xl px-4 pb-12;
-  }
-  .post-title {
-    @apply text-2xl font-semibold text-skin-accent;
-  }
-</style>
 
 <script is:inline>
   /** Create a progress indicator
@@ -171,7 +166,7 @@ const layoutProps = {
 
       let copyButton = document.createElement("button");
       copyButton.className =
-        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-xs leading-4 text-skin-base font-medium";
+        "absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-xs leading-4 text-skin-base font-medium font-code hover:brightness-95";
       copyButton.innerHTML = copyButtonLabel;
       codeBlock.setAttribute("tabindex", "0");
       codeBlock.appendChild(copyButton);
