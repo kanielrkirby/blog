@@ -119,6 +119,7 @@
   html[data-theme="dark"] {
     .astro-code,
     .astro-code span {
+      background-color: var(--shiki-dark-bg) !important;
       color: var(--shiki-dark) !important;
       font-style: var(--shiki-dark-font-style) !important;
       font-weight: var(--shiki-dark-font-weight) !important;
@@ -126,13 +127,19 @@
     }
   }
 
-  html[data-theme='dark'] pre {
-    @apply !bg-skin-fill-dark;
+  html[data-theme="dark"] pre {
+  }
+
+  html[data-theme="light"] pre {
+    @apply !font-code;
   }
 
   pre > code {
     white-space: pre;
   }
+
+  .prose code {
+    font-size: 0.9em;
 }
 
 @layer components {
