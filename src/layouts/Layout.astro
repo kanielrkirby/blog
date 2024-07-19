@@ -98,8 +98,21 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
+    <script>
+      import scramble from "@utils/scramble.js";
+      document.body.classList.remove("opacity-0");
+
+      scramble("[scramble]", 2000);
+      setTimeout(() => {
+        document.addEventListener("astro:page-load", () => {
+          document.body.classList.remove("opacity-0", "transition-all");
+          scramble("[scramble]");
+        });
+      }, 1100)
+    </script>
   </head>
   <body>
+  <body scramble class="transition-all duration-1000 opacity-0">
     <slot />
   </body>
 </html>
