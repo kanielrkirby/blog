@@ -1,9 +1,9 @@
 ---
-# slug: 
+# slug:
 title: Build the S#*t App
 desc: ""
 published: 2024-04-04T14:00:00-06:00
-# modified: 
+# modified:
 authors:
   - Kaniel Kirby
 tags:
@@ -13,8 +13,8 @@ tags:
   - software-development
 # featured: true
 draft: false
-# img: 
-# canonicalURL: 
+# img:
+# canonicalURL:
 ---
 
 <!--
@@ -34,7 +34,7 @@ I got into a rut after picking up my first job, because I had everything I neede
 
 The fact is, many newer developers aren't building apps anymore. Maybe they found other things to keep them busy, or they just don't feel inspired.
 
-For me, I was discouraged by all the advice I had heard before. "Why build an app if it's already been built?" "I don't have any problems that need solving right now." "I don't have anything ***good enough*** to show real users." 
+For me, I was discouraged by all the advice I had heard before. "Why build an app if it's already been built?" "I don't have any problems that need solving right now." "I don't have anything ***good enough*** to show real users."
 
 And all of that makes enough sense in the moment, but what it results in is someone who hasn't engaged in active programming and learning, trying to find problems to solve. That is, people who aren't running into problems anymore, looking for problems.
 

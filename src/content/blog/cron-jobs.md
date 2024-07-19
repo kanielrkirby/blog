@@ -1,10 +1,10 @@
 ---
-# slug: 
+# slug:
 title: "CRON Jobs, Simplified"
 desc: "Here, I'll explain what CRON jobs are, how to use them, and show a basic example of them in GitHub Actions/Workflows."
 published: 2023-11-21T03:21:56-06:00
-# modified: 
-authors: 
+# modified:
+authors:
   - Kaniel Kirby
 tags:
   - tutorial
@@ -21,7 +21,7 @@ tags:
 img: /images/posts/cron-jobs/pexels-andrey-grushnikov-707676.jpg
 alt: |
   Photo by Andrey Grushnikov: https://www.pexels.com/photo/black-and-white-photo-of-clocks-707676/
-# canonicalURL: 
+# canonicalURL:
 draft: false
 ---
 
@@ -70,6 +70,7 @@ crontab /path/to/new-file Replaces current file with the new file.
 That's about it for this utility, it's really that simple. Everything in crontab is relative to the current user unless otherwise specified, and each user only has one file.
 
 ## On to GitHub!
+
 This section is only relevant if you make use of GitHub Actions/Workflows.
 
 You're going to like this part... it's near exactly the same as standard UNIX CRON! So just open up your workflow .yml file and add something like the following!
