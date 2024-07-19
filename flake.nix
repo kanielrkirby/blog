@@ -18,6 +18,7 @@
             bun
             pnpm
             yarn
+            netlify-cli
             nodePackages_latest.prettier
             nodePackages_latest."@astrojs/language-server"
             nodePackages_latest."@tailwindcss/language-server"
