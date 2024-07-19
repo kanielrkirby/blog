@@ -115,23 +115,19 @@ module.exports = {
     require("@tailwindcss/typography"),
     plugin(({ matchComponents, theme }) => {
       const values = theme("nbShadow");
-      matchComponents({
-        "nb-shadow": (v) => {
-          return {
-            "@apply cursor-pointer transition-all duration-200": {},
-            boxShadow: "0 0 0 0 #000000",
-            translate: "0 0",
-            border: `${v / 2.5}px solid black`,
-            "&:hover": {
-              boxShadow: `${v}px ${v}px 0 0 #000000`,
-              translate: `-${v}px -${v}px`,
-            },
-          }
+      matchComponents(
+        {
+          "nb-shadow": v => {
+            return {
+              [`@apply cursor-pointer transition-all duration-200 border-[${v / 2.5}px] dark:border-white border-black shadow-black dark:shadow-skin-card-muted shadow-[0_0_0_0_var(--tw-shadow-color)] hover:shadow-[${v}px_${v}px_0_0_var(--tw-shadow-color)] hover:translate-x-[-${v}px] hover:translate-y-[-${v}px] translate-x-0 translate-y-0`]:
+                {},
+            };
+          },
         },
-      },
-      {
-        values,
-      });
+        {
+          values,
+        }
+      );
     }),
   ],
 };
