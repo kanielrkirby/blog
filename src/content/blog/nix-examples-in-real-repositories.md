@@ -2,16 +2,19 @@
 # slug:
 title: Nix Examples in Real Repositories
 desc: In my last blog post, I talked about the fundamentals of building a Nix flake for development environments. While I can certainly see this as being helpful, I personally find that real-world examples are the best way of learning how these workflows *actually work*.
-published: 2024-06-01T14:00:00-06:00
+published: 2024-07-22T14:00:00-06:00
 # modified:
 authors:
   - Kaniel Kirby
-# tags:
-# featured: true
-# img:
-# alt:
+tags:
+  - NixOS
+  - Development Environments
+  - Tutorial
+featured: true
+img: https://raw.githubusercontent.com/NixOS/nixos-artwork/56b7a5788005a3eaecb5298f0dbed0f7d1573abc/wallpapers/nix-wallpaper-nineish-dark-gray.svg
+alt: Nineish NixOS Wallpaper from the NixOS/nixos-artwork repo.
 # canonicalURL:
-draft: false
+# draft: true
 ---
 
 In my [last blog post](https://dome.software/blog/nix-development-environments/), I talked about the fundamentals of building a Nix flake for development environments. While I can certainly see this as being helpful, I personally find that real-world examples are the best way of learning how these workflows _actually work_.

@@ -1,7 +1,7 @@
 ---
 # slug:
 title: "CRON Jobs, Simplified"
-desc: "Here, I'll explain what CRON jobs are, how to use them, and show a basic example of them in GitHub Actions/Workflows."
+desc: "What are CRON jobs? What is crontab? What's type of CRON system does GitHub use? These are questions we've all had at some point or another, and in this quick article, I want to get to the bottom of it!"
 published: 2023-11-21T03:21:56-06:00
 # modified:
 authors:
@@ -19,8 +19,7 @@ tags:
   - scheduling
 # featured: true
 img: /images/posts/cron-jobs/pexels-andrey-grushnikov-707676.jpg
-alt: |
-  Photo by Andrey Grushnikov: https://www.pexels.com/photo/black-and-white-photo-of-clocks-707676/
+alt: "Photo by Andrey Grushnikov: https://www.pexels.com/photo/black-and-white-photo-of-clocks-707676"
 # canonicalURL:
 draft: false
 ---

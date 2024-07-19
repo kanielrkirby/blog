@@ -7,14 +7,14 @@ published: 2024-03-26T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:
-  - career-advice
-  - webdev
-  - programming
-  - software-development
+  - Career Advice
+  - Failure
+  - Software Development
+  - Personal Development
 # featured: true
 # draft: true
-img: https://images.pexels.com/photos/4506239/pexels-photo-4506239.jpeg
-alt: TODO
+img: https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600
+alt: "Photo by Singkham: https://www.pexels.com/photo/clear-light-bulb-planter-on-gray-rock-1108572/"
 # canonicalURL:
 ---
 

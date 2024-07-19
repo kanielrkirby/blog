@@ -1,19 +1,19 @@
 ---
 # slug:
 title: Failure is a Virtue
-desc: As the title state, I believe that failure truly is a virtue, one that I have not mastered yet, but one that I am excited about!
-published: 2024-06-01T14:00:00-06:00
+desc: As the title states, I believe that failure truly is a virtue, one that I have not mastered yet, but one that I am excited about!
+published: 2024-07-29T14:00:00-06:00
 # modified:
 authors:
   - Kaniel Kirby
 tags:
-  - career advice
-  - failure
-  - software development
-  - personal development
+  - Career Advice
+  - Failure
+  - Software Development
+  - Personal Development
 featured: true
-img: https://images.pexels.com/photos/7203972/pexels-photo-7203972.jpeg
-alt: "Photo by SHVETS production: https://www.pexels.com/photo/carton-box-with-black-word-brain-7203972/"
+img: https://images.pexels.com/photos/19867472/pexels-photo-19867472/free-photo-of-scrabble-letters-spelling-out-the-word-fail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+alt: "Photo by Markus Winkler: https://www.pexels.com/photo/scrabble-letters-spelling-out-the-word-fail-19867472/"
 # canonicalURL:
 # draft: true
 ---
