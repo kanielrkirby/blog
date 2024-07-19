@@ -104,38 +104,59 @@ function recurseAndMark(element, accumulator = []) {
 }
 
 /**
+ * @typedef {Object} ScrambleOptions
+ * @property {number} [duration=1000] - The duration of the scramble animation in milliseconds.
+ * @property {string[]} [characters=defaultCharacters] - The characters to use for scrambling.
+ * @property {boolean} [hover=false] - Whether to apply the scramble effect on hover.
+ */
+
+/**
  * Start the scramble animation for all `query` elements and their children over the duration of `duration`, utilizing provided `characters`.
  * @param {string} query - The CSS selector to query elements.
- * @param {number} [duration=1000] - The duration of the scramble animation in milliseconds.
- * @param {string[]} [characters=defaultCharacters] - The characters to use for scrambling.
+ * @param {ScrambleOptions} options - Option for the scramble animation.
  */
-function scramble(query, duration = 1000, characters = defaultCharacters) {
+function scramble(
+  query,
+  { duration = 1000, characters = defaultCharacters, hover = false } = {}
+) {
   const queriedElements = Array.from(document.querySelectorAll(query));
   const textNodes = queriedElements.map(e => recurseAndMark(e)).flat();
-  const timer = new Timer(duration);
 
-  let interval = setInterval(() => {
-    // Cleanup
-    if (timer.done) {
-      clearInterval(interval);
-      for (const node of textNodes) {
-        if (node instanceof Text) {
+  function run() {
+    const timer = new Timer(duration);
+
+    let interval = setInterval(() => {
+      // Cleanup
+      if (timer.done) {
+        clearInterval(interval);
+
+        for (const node of textNodes) {
           node.textContent = node.__trueTextContent;
-          node.__trueTextContent = undefined;
         }
-        if (node instanceof Element) {
-          node.textContent = node.getAttribute("data-true-content");
-          node.removeAttribute("data-true-content");
-        }
-      }
-      return;
-    }
 
-    for (const textNode of textNodes) {
-      const index = Math.round(textNode.length * timer.progress);
-      scrambleTextNodeAt(textNode, index + 1, characters);
+        return;
+      }
+
+      for (const textNode of textNodes) {
+        const index = Math.round(textNode.length * timer.progress);
+        scrambleTextNodeAt(textNode, index + 3, characters);
+      }
+    }, 30);
+  }
+
+  if (hover) {
+    for (const element of queriedElements) {
+      /** @type {Timer} */
+      let buffer;
+      element.addEventListener("mouseover", () => {
+        if (buffer && !buffer.done) return;
+        buffer = new Timer(400);
+        run();
+      });
     }
-  }, 1);
+  } else {
+    run();
+  }
 }
 
 export default scramble;

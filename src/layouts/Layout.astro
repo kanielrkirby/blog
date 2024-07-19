@@ -104,13 +104,26 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
       import scramble from "@utils/scramble.js";
       document.body.classList.remove("opacity-0");
 
-      scramble("[scramble]", 2000);
-      setTimeout(() => {
-        document.addEventListener("astro:page-load", () => {
-          document.body.classList.remove("opacity-0", "transition-all");
-          scramble("[scramble]");
-        });
-      }, 1100)
+      let timeout: NodeJS.Timeout;
+
+      function run() {
+        document.removeEventListener("load", run);
+        clearTimeout(timeout);
+        scramble("[scramble]", { duration: 2000 });
+        setTimeout(() => {
+          document.addEventListener("astro:page-load", () => {
+            document.body.classList.remove("opacity-0", "transition-all");
+            scramble("[scramble]");
+          });
+          document.addEventListener("astro:after-swap", () => {});
+        }, 1100);
+      }
+
+      document.addEventListener("load", run);
+
+      timeout = setTimeout(run, 50);
+
+      scramble(".scramble-hover", { hover: true });
     </script>
     <style>
       @keyframes customFadeIn {
@@ -154,7 +167,7 @@ const socialImageURL = new URL(img ?? SITE.img ?? "og.png", Astro.url.origin)
       }
     </style>
   </head>
-  <body scramble class="transition-all duration-1000 opacity-0">
+  <body scramble class="opacity-0 transition-transform duration-1000">
     <slot />
   </body>
 </html>
