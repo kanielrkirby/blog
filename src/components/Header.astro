@@ -13,7 +13,7 @@
     </a>
     <details
       id="menu-items"
-      class="relative [&:not([open])_line.x]:hidden [&[open]_line.l]:hidden"
+      class="relative [&:not([open])_line.x]:hidden [&[open]_line.l]:hidden h-fit top-0 bottom-0 my-auto"
     >
       <summary
         class="w-fit cursor-pointer list-none p-2 marker:hidden hover:scale-110"
@@ -28,7 +28,6 @@
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="scale-125 fill-skin-base transition-all duration-200 max-sm:scale-100"
         >
           <line class="l stroke-2" x1="5" y1="8" x2="19" y2="8"></line>
           <line class="l stroke-2" x1="10" y1="16" x2="19" y2="16"></line>
@@ -42,13 +41,13 @@
         <header class="flex w-full justify-between p-4">
           <a
             href="/search"
-            class="transition-all duration-100 hover:scale-110 hover:text-black"
+            class="group inline-block hover:text-skin-accent"
             aria-label="Search posts"
             title="Search posts"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="scale-125 max-sm:scale-100"
+              class="hover:scale-125 sm:w-8"
               ><path
                 d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
               ></path>
@@ -56,14 +55,13 @@
           </a>
           <button
             id="theme-btn"
-            class="transition-all duration-100 hover:scale-110"
             title="Toggles light & dark"
             aria-label="auto"
             aria-live="polite"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="block scale-125 max-sm:scale-100 dark:hidden"
+              class="block dark:hidden hover:scale-125 sm:w-8"
             >
               <path
                 d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"
@@ -71,7 +69,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="hidden scale-125 sm:scale-100 dark:block"
+              class="hidden dark:block hover:scale-125 sm:w-8"
             >
               <path
                 d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"
@@ -83,17 +81,17 @@
         <nav class="flex flex-col gap-2 p-3">
           <a
             href="/posts/"
-            class="col-span-2 flex w-full cursor-pointer items-center justify-center rounded-sm border-2 border-solid border-skin-base bg-red-200 p-2 transition-all duration-200 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[4px_4px_0_0px_rgb(var(--color-text-base))]"
+            class="nb-shadow-4 col-span-2 flex w-full items-center justify-center rounded-sm bg-red-200 p-2"
             >Posts</a
           >
           <a
             href="/tags/"
-            class="col-span-2 flex w-full cursor-pointer items-center justify-center rounded-sm border-2 border-solid border-skin-base bg-green-200 p-2 transition-all duration-200 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[4px_4px_0_0px_rgb(var(--color-text-base))]"
+            class="nb-shadow-4 col-span-2 flex w-full items-center justify-center rounded-sm bg-green-200 p-2"
             >Tags</a
           >
           <a
             href="/about/"
-            class="col-span-2 flex w-full cursor-pointer items-center justify-center rounded-sm border-2 border-solid border-skin-base bg-purple-200 p-2 transition-all duration-200 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[4px_4px_0_0px_rgb(var(--color-text-base))]"
+            class="nb-shadow-4 col-span-2 flex w-full items-center justify-center rounded-sm bg-purple-200 p-2"
             >About</a
           >
         </nav>

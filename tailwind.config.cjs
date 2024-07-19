@@ -1,3 +1,5 @@
+let plugin = require("tailwindcss/plugin");
+
 function withOpacity(variableName, opacity) {
   if (variableName && opacity) {
     return `rgba(var(${variableName}), ${opacity})`;
@@ -15,6 +17,16 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
+    nbShadow: {
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      6: 6,
+      7: 7,
+      8: 8,
+    },
     // Remove the following screen breakpoint or add other breakpoints
     // if one breakpoint is not enough for you
     screens: {
@@ -80,5 +92,27 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(({ matchComponents, theme }) => {
+      const values = theme("nbShadow");
+      matchComponents({
+        "nb-shadow": (v) => {
+          return {
+            "@apply cursor-pointer transition-all duration-200": {},
+            boxShadow: "0 0 0 0 #000000",
+            translate: "0 0",
+            border: `${v / 2.5}px solid black`,
+            "&:hover": {
+              boxShadow: `${v}px ${v}px 0 0 #000000`,
+              translate: `-${v}px -${v}px`,
+            },
+          }
+        },
+      },
+      {
+        values,
+      });
+    }),
+  ],
 };
