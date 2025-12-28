@@ -1,60 +1,42 @@
 ---
-# slug:
-title: "A Case for Discomfort In Learning"
-desc: "We, as humans, tend to lean away from discomfort. Let's see what that means for us."
-published: 2024-03-26T14:00:00-06:00
-# modified:
+title: "A Case for Discomfort"
+desc: "Why avoiding the uncomfortable parts of learning keeps you stuck."
+published: 2024-03-26T14:00:00-05:00
 authors:
   - Kaniel Kirby
 tags:
-  - Career Advice
-  - Failure
-  - Software Development
-  - Personal Development
-# featured: true
-# draft: true
-img: https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600
-alt: "Photo by Singkham: https://www.pexels.com/photo/clear-light-bulb-planter-on-gray-rock-1108572/"
-# canonicalURL:
+  - career
+  - learning
+  - growth
+draft: false
 ---
 
-## Introduction
+When I started programming, I wanted to learn everything. Sass? Drop everything. TypeScript? Why wasn't I using this already? Astro? I know three frameworks but I need better buttons.
 
-When I first started programming, I wanted to learn about everything. Sass? Let's drop everything and learn it! TypeScript? Why haven't I been using this all along? Astro? I already know 3 frameworks, but I really need this. I need better buttons, after all.
+That impulse came from discomfort - the feeling of not understanding something in my domain. And that discomfort was useful.
 
-## Starting Out
+## The Comfort Zone
 
-Let me provide some context: You're a developer who started programming a month ago. You've finally got a decent handle on basic HTML and CSS, and kind-of-sort-of-maybe understand JavaScript, but you aren't so solid on it. Then you see a blog / video / comment about Node and the backend, and your immediate impulse is to try to understand what that's about, because the only alternative is to be left with this **_uncomfortable_** feeling from lacking a solid understanding over your domain. And **_that's_** the important part.
+Eventually you settle into a stack. JavaScript, React, Node, Express, Redux, REST. When someone says "state management" you say "Redux." When someone says "formatting" you say "Prettier." Problems have solutions, solutions have tools, tools are familiar.
 
-## Getting Comfortable
+Then you hear about something outside your bubble. Docker. Raw SQL. Rust. Something you don't _need_ to understand to do your current job.
 
-Discomfort is where learning happens. As we progress, we start becoming fairly comfortable in our own subset of problems and solutions, with a finite list of related technologies. Let's say that list has the following:
+The logical response: why learn it? You're already effective with what you know. Learning new things takes time away from shipping features.
 
-- JavaScript
-- HTML
-- CSS
-- React
-- NodeJS
-- Express
-- Prettier
-- State
-- Redux
-- REST
+## The Problem
 
-When someone says "REST", you say "Express". When someone says "Formatting", you say "Prettier". When someone says "State Management", you ~~say "Redux"~~ close the current tab and pull a different task from the kanban board.
+That logic is sound enough to be dangerous.
 
-Then, you hear about some external technology that you don't **_need_** to understand to be proficient in your job as a software developer. Something like Docker, or raw SQL. But that's uncomfortable. Why would I do that, when I can continue working with the technologies I'm already good at? I don't need this to be effective.
+You don't _need_ to learn Golang, you already know JavaScript. You don't _need_ to know SQL, you already know Prisma. You don't _need_ to understand networking, the framework handles it.
 
-## And That's a Logical Conclusion!
+Each excuse is individually reasonable. Collectively, they keep you in a shrinking bubble while the industry moves around you.
 
-Albeit an incomplete one. I don't want to discount this perspective completely, as it makes a lot of sense why you would think that. You already know X, Y, and Z, why do you need to learn Q?
+Worse: you stop encountering new perspectives. Everything looks like a nail because you only own hammers. Problems that don't fit your stack become someone else's problems.
 
-Unfortunately, humans are not completely built on logic, and a couple of problems can sneak up here. For one, you miss out on new perspectives when you stay in your bubble. It takes a lot of intention that most people will not have to continue to appreciate new perspectives when all you do is use React / Prisma.
+## The Point
 
-Not only that, but it becomes 1000 times easier to excuse yourself from learning new things with that logic, because it's sound "enough". You don't **_need_** to learn Golang, you already know JavaScript (please never say this). You don't **_need_** to know SQL, you already understand Prisma ORM. This stunts the learning process, and encourages other people to solve the important problems.
+Discomfort is where learning happens. That uncomfortable feeling when you don't understand something? That's the signal to lean in, not away.
 
-## Conclusion
+Software development isn't about memorizing how-tos. Anyone can Google "why won't my webhook fire" and find an answer from 2015. The hard part is having broad enough knowledge to know what tools exist, and creative enough thinking to apply them to problems that haven't been solved yet.
 
-It makes sense why you might prioritize "practical" learning over broadening your knowledege in seemingly unrelated areas. But this is counter-intuitive to the domain we work in. Software Development isn't about "How To", because anyone can Google ["Why won't my Shopify webhook fire?"](https://dome.software/blog/shopify-in-legacy-systems) and get a decent answer from Stack Overflow, ChatGPT, or the random saint on Medium that had the same problem in 2015 and shared their solution. That's the easy part. The hard part is having a good understanding of the entire domain, and knowing what **_tools_** to use, and how to use them in creative ways to solve problems that **_haven't been solved yet_**.
-
-I hope this post was insightful. Happy coding!
+That breadth comes from repeatedly sitting with discomfort until it becomes familiarity. There's no shortcut.

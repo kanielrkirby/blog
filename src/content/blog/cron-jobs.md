@@ -2,7 +2,7 @@
 # slug:
 title: "CRON Jobs, Simplified"
 desc: "What are CRON jobs? What is crontab? What's type of CRON system does GitHub use? These are questions we've all had at some point or another, and in this quick article, I want to get to the bottom of it!"
-published: 2023-11-21T03:21:56-06:00
+published: 2023-11-21T14:00:00-05:00
 # modified:
 authors:
   - Kaniel Kirby

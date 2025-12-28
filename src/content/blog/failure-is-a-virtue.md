@@ -1,67 +1,46 @@
 ---
-# slug:
 title: Failure is a Virtue
-desc: As the title states, I believe that failure truly is a virtue, one that I have not mastered yet, but one that I am excited about!
-published: 2024-07-29T14:00:00-06:00
-# modified:
+desc: Why avoiding failure stunts growth, and how to get better at failing.
+published: 2024-07-29T14:00:00-05:00
 authors:
   - Kaniel Kirby
 tags:
-  - Career Advice
-  - Failure
-  - Software Development
-  - Personal Development
-featured: true
-img: https://images.pexels.com/photos/19867472/pexels-photo-19867472/free-photo-of-scrabble-letters-spelling-out-the-word-fail.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
-alt: "Photo by Markus Winkler: https://www.pexels.com/photo/scrabble-letters-spelling-out-the-word-fail-19867472/"
-# canonicalURL:
-# draft: true
+  - career
+  - failure
+  - growth
+draft: false
 ---
 
-My insecurities around my intelligence, self-worth, and inadequacy had me in a rut again.
+I used to tweak PRs for hours before submitting. "What if they say this?" I'd spiral, and my code quality declined alongside my mental health. After all that, the review came back: "This is not the right solution."
 
-When I made a PR, I would tweak it for hours, with no end in sight. "What if they say this", I'd ask myself, and my mental health and code quality declined as a result. Ultimately, I received neither approval nor acceptance, but the simple, terse words "This is not the right solution."
+All that avoidance, same result.
 
-## Software is Hard
+## The Problem
 
-Software development can be difficult. It's a neverending journey of learning and growth. The moment you feel settled, you cease to grow meaningfully. A perpetually filled-to-the-brim list of tasks, self-doubt bouncing around unchecked.
+Software development rewards iteration. Ship something, get feedback, improve. But when you're insecure about your work, you try to skip the feedback part by making everything perfect upfront.
 
-We glamourize efficiency and productivity, and whilst not bad virtues on their own, I find them restrictive for fulfillment and happiness.
+This doesn't work. You can't anticipate every critique. You can't know what you don't know. And the longer you spend polishing in isolation, the more invested you get in the wrong direction.
 
-There is some amount of satisfaction from software, but purpose? I just don't know if that's what software was made for. We're here to make _other_ people's visions come alive. To fulfill _other_ people's aspirations. Rarely do we see responses to _our_ work, but rather just a Jira ticket moving to the Done column before we start anew.
+The fear is that failure means inadequacy. The reality is that failure is information.
 
-## The Failed Promise of Idealism
+## The Trap
 
-> What if I can craft the perfect PR, the first time?
+Avoiding criticism feels safe. If I never submit imperfect work, I never have to face the discomfort of being wrong in front of colleagues.
 
----
+But this stunts growth. Discomfort is the catalyst - I've [written about this before](/posts/a-case-for-discomfort). By avoiding it, you rob yourself of the feedback that actually makes you better.
 
-Avoid criticism at all costs. This is the dogma one often follows when struggling with imposter syndrome. Critique is one of the oldest fears, after all, and we helplessly tie it to our adequacy, or lack thereof.
+You also waste time. Hours spent pre-empting imaginary criticisms are hours not spent on the next thing. The perfect PR that took a week is worth less than two good-enough PRs that took three days total.
 
-I have flaws, and make mistakes. So what of it? If I quadruple check my work, I will never face the sting of inadequacy, the embarrassment that will certainly follow after I fail in front of my colleagues.
+## What Helps
 
-Paradoxically, this stunts true growth, and makes it impossible to conquer this fear at all. As I've [talked about before](/posts/a-case-for-discomfort.md), discomfort is the most effective catalyst I've found for growth and learning, and by purposefully avoiding it, you rob yourself of some of the most important lessons.
+**Smaller iterations.** Submit earlier. Get feedback on direction before you're invested in implementation. A 30-minute check-in can save a week of wasted work.
 
-## Moving Forward
+**Ask sooner.** Especially in OSS or new codebases. The fear of looking dumb by asking is smaller than the cost of building the wrong thing. Most maintainers would rather answer a question than review a misguided PR.
 
-I've decided that this is simply not the life I want to lead. Failure *is* the learning process. Failure *is* growth. And I'm not willing to forgo growth in this life for safety.
+**Reflect on past failures.** Not to beat yourself up - to extract the lesson. What signals did you miss? What would you do differently? Failure without reflection is just repetition.
 
-But how do we do this effectively? I've compiled a short list of steps *I'll* be taking in the near future, and would love it if you would as well.
+## The Point
 
-### Set Smaller Goals
+Failure isn't the opposite of success. It's the mechanism of learning. The goal isn't to avoid failure - it's to fail faster, cheaper, and with better information extraction.
 
-We often, as humans, are bad at estimations. Atomic Habits and Tiny Habits both do a great job of explaining this concept in depth, but the TLDR is that we work better with consistent, small feedback that we're doing the right things. Exercise? Just start for 5 minutes each day. A new project? Take a simpler issue at first. Our jobs, after all, are all about breaking down complex tasks into more manageable ones!
-
-### Check In
-
-As someone who struggles with imposter syndrome, I find myself halting for much too long before asking for help, especially when contributing to OSS. I don't want to get in the way, or mess up the codebase. But this tends to lead to long gaps in between communication, where it's easy to get too invested in the wrong solution. We should be willing to check in with our superiors, and ensure we're on the right track. Most are simply satisfied that you're spending time on their project, and are willing to help out. Just ask!
-
-### Reflect
-
-Failure is not exclusive to external pressures. You should also be willing to look at your own past projects and reflect upon what you think worked, and what might *need* some work.
-
-## Conclusion
-
-I firmly believe that failure is a virtue—a skill I haven't mastered yet, but one I'm eager to learn and grow from. I genuinely hope this article was insightful.
-
-Happy hacking, everybody!
+I'm not great at this yet. But I'm getting better at being bad at things, which is sort of the whole point.

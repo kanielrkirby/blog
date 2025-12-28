@@ -2,7 +2,7 @@
 # slug:
 title: Nix Examples in Real Repositories
 desc: In my last blog post, I talked about the fundamentals of building a Nix flake for development environments. While I can certainly see this as being helpful, I personally find that real-world examples are the best way of learning how these workflows *actually work*.
-published: 2024-07-22T14:00:00-06:00
+published: 2024-07-22T14:00:00-05:00
 # modified:
 authors:
   - Kaniel Kirby
