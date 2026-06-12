@@ -13,13 +13,13 @@ draft: false
 featured: true
 ---
 
-## The Discovery
+I've been exploring some new, incredibly powerful tools lately. Senior developers hate this one simple trick!
 
-I've been exploring some incredibly powerful tools lately. They're lightweight, universally available, and compose beautifully. I wanted to share my findings with the community.
+## List of Tools
 
-## find
+### `find`
 
-This one's a game-changer. Locate files by any attribute - name, type, size, modification time.
+This one's a game-changer. Locate files by any attribute: name, type, size, modification time.
 
 It's almost a mini programming language. Conditions AND by default, `-o` for OR, `-not` for negation, parentheses for grouping. `find <where> <conditions>`:
 
@@ -32,7 +32,7 @@ $ find /var/log -name "*.log" -mtime -7 -size +1M
 /var/log/syslog
 /var/log/auth.log
 
-$ find . \( -name "*.js" -o -name "*.ts" \) -not -name "*.min.js"
+$ find . \( -name "*.js" -or -name "*.ts" \) -not -name "*.min.js"
 ./src/app.js
 ./src/utils.ts
 ```
@@ -51,7 +51,7 @@ The `{}` gets replaced with each filename. Find every JS file, grep it for TODOs
 
 </details>
 
-## grep
+### `grep`
 
 Pattern matching in files. I know, I know - sounds basic. But hear me out.
 
@@ -112,7 +112,7 @@ $ grep -E "error|warn|fatal" log.txt
 
 </details>
 
-## sed
+### `sed`
 
 Stream editor. Transforms text as it flows through.
 
@@ -155,7 +155,7 @@ $ sed '1d' file.txt           # delete first line
 
 </details>
 
-## awk
+### `awk`
 
 This one's wild. It's basically a programming language disguised as a command.
 
@@ -214,7 +214,7 @@ That just grouped and counted by the third column. In a shell one-liner. From 19
 
 </details>
 
-## ps
+### `ps`
 
 List running processes. The `aux` flags are basically muscle memory at this point:
 
@@ -247,7 +247,7 @@ $ pgrep firefox
 $ kill $(pgrep firefox)
 ```
 
-## top
+### `top`
 
 Okay, this one's almost too modern. It's got a LIVE UPDATING INTERFACE:
 
@@ -268,7 +268,7 @@ While it's running: `k` to kill a process, `q` to quit, `1` to show per-CPU stat
 
 I hear there are fancier versions now - `htop`, `btop++` - but honestly, `top` ships everywhere. Every server, every container, every minimal VM. Zero installation required.
 
-## `/proc` and `/sys`
+### `/proc` and `/sys`
 
 These aren't even tools - they're virtual filesystems exposed by the kernel. They're on basically every Linux system, even minimal ones without GNU coreutils. If you can `cat` a file, you can use these.
 
@@ -287,7 +287,7 @@ $ ls /proc/$(pgrep firefox)/fd | wc -l
 
 Memory, battery, and Firefox's 247 open file descriptors. Straight from the kernel. No libraries. No dependencies. Just files.
 
-## vi
+### `vi`
 
 The editor that's already there. Always. Even in your initramfs. Even in your router's busybox. Even in that container image that has literally nothing else.
 
@@ -320,7 +320,7 @@ That's it. You now know enough vi to edit any config file on any server anywhere
 
 </details>
 
-## man
+### `man`
 
 Documentation that ships with the tool:
 
@@ -342,7 +342,7 @@ Navigate with vi keys (or space/b for pages). Search with `/pattern`. Press `q` 
 
 No Stack Overflow. No "this page requires JavaScript." No "sign up to view this answer." Just the reference, offline, always available.
 
-## Composition
+## `Composition`
 
 Here's where it gets interesting. These tools COMBINE:
 
@@ -372,9 +372,9 @@ done
 
 Find all log files containing errors, show the last 5 lines of each.
 
-## The Point
+## Conclusion
 
-Listen. Modern tools aren't evil. I use VSCode, Nix tooling, Tmux, web browsers, etc., all the time. I find all of these massively useful for my day-to-day life.
+Listen. Modern tools aren't evil. I use VSCode, Nix tooling, Tmux, web browsers, fzf, etc., all the time. I find all of these massively useful for my day-to-day life.
 
 But when you're debugging production at 2 AM over a flaky SSH connection, it's just better to know the universal basics that have been around for half a century.
 
