@@ -6,9 +6,10 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Tag from "@components/Tag.astro";
 import getUniqueTags from "@utils/getUniqueTags";
+import postFilter from "@utils/postFilter";
 import { SITE } from "@config";
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog", postFilter);
 
 let tags = getUniqueTags(posts);
 ---

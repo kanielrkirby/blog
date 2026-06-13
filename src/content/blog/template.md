@@ -12,4 +12,5 @@ authors:
 # alt:
 # canonicalURL:
 draft: true
+# archived: true
 ---

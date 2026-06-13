@@ -22,6 +22,7 @@ const blog = defineCollection({
         alt: z.string().optional(),
         canonicalURL: z.string().optional(),
         draft: z.boolean().optional(),
+        archived: z.boolean().optional(),
       })
       .refine(({ img, alt }) => !img || (img && alt && alt.trim() != ""), {
         message:
