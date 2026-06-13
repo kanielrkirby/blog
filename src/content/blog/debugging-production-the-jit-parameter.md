@@ -27,9 +27,9 @@ The error pointed to PostgreSQL's `jit` parameter - Just-In-Time compilation. Bu
 
 ## Research
 
-Let's look up what this is all about. I Google "FATAL: unrecognized configuration parameter jit" (and various permutations).
+Let's research to figure out what this is all about. "FATAL: unrecognized configuration parameter jit".
 
-**1st hit: `Odoo.com/forum` post**
+**1st hit: `odoo.com/forum` post**
 
 > I'm trying using `psycopg2`, in my Odoo local I can access successfully, but not in Odoo.sh, I get this error: `connection to server at "xxx.xx.xxx.xxx", port xxxx failed: FATAL: unrecognized configuration parameter "jit"`
 > To solve this issue you need to disable JIT explicitly when making the connection.
@@ -38,7 +38,7 @@ Great news. Let's verify by searching for where and why this happened, and what 
 
 ## Recon
 
-First sweep: grep the codebase for `jit` locally, using `\b` to avoid hitting words that contain `jit`. `--binary-files=without-match` to avoid binary files.
+First sweep: grep the codebase for `jit` on my dev machine, using `\b` to avoid hitting unrelated words that contain `jit`. `--binary-files=without-match` to avoid binary files.
 
 ```bash
 grep -r "\bjit\b" --binary-files=without-match ~/project/directory/odoo  # Community
@@ -46,7 +46,7 @@ grep -r "\bjit\b" --binary-files=without-match ~/project/directory/enterprise  #
 grep -r "\bjit\b" --binary-files=without-match ~/project/directory/odoo-modules  # Our implementation
 ```
 
-Nothing. Second sweep: login to Odoo.sh (PaaS for hosting and CI/CD), enter command line, and start greping the Linux box.
+Nothing. Second sweep: login to Odoo.sh (PaaS for hosting and CI/CD) and start greping the Ubuntu box.
 
 ```bash
 grep -r "\bjit\b" --binary-files=without-match /etc/
@@ -57,7 +57,7 @@ find /var -path /var/log -prune -o -type f -print0 | xargs -0 grep -nH "jit"
 
 `/var/log` is protect by Odoo.sh for whatever reason, nothing is found in `/etc`, and `/var` just contains packages for PostgreSQL's JIT.
 
-A thousand lines of various `numba.jit` references (Numba is a math library in Python). Let's exclude that too.
+A thousand lines of various `numba.jit` references. Seems unrelated, next!
 
 ```bash
 grep -r "\bjit\b" --binary-files=without-match --context 10 /home/odoo | grep -v numba
@@ -80,7 +80,7 @@ env | grep jit
 PGOPTIONS=-c jit=off
 ```
 
-The evil is here. The platform was setting `PGOPTIONS` as an environment variable. This gets passed to libpq and applied to every PostgreSQL connection automatically. It wasn't in any config file - it was injected into the shell environment.
+_**There**_ is the evil... The platform was setting `PGOPTIONS` as an environment variable. This gets passed to libpq and applied to every PostgreSQL connection automatically. It wasn't in any config file - it was injected into the shell environment.
 
 ## Root Cause Analysis
 
@@ -94,7 +94,7 @@ Local worked because `PGOPTIONS` wasn't set in our development environment. No p
 
 At first, I searched for an idiomatic solution. Surely there's a list of environment variables in the platform, under this project, _somewhere_!
 
-Alas, not Google, nor Stack Overflow, nor ChatGPT could tell me where this could be. The only option was to override it in the initialization logic for `psycopg2`.
+Alas, not Google, nor Stack Overflow, nor even ChatGPT could tell me where this could be. The only option was to override it in the initialization logic for `psycopg2`.
 
 ```py
 # Pass options='' to override PGOPTIONS env var which may contain
