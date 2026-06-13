@@ -1,7 +1,7 @@
 ---
 title: "ERP Is a Platform for Process"
 desc: "What Odoo taught me about all-in-one software."
-published: 2026-06-12T14:00:00-06:00
+published: 2026-02-01T14:00:00-06:00
 authors:
 - Kaniel Kirby
 tags:
@@ -10,7 +10,8 @@ tags:
 - business-software
 - integrations
 - migrations
-draft: true
+draft: false
+featured: true
 ---
 
 ## The Learning Curve

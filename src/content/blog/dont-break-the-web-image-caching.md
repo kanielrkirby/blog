@@ -1,7 +1,7 @@
 ---
 title: "Don’t Break the Web: Image Caching"
-desc: "What a simple GridFS migration taught me about payloads, caching, and the cost of fighting the web’s default patterns."
-published: 2026-06-12T14:00:00-06:00
+desc: "Exploring the cost of fighting the web’s default patterns."
+published: 2026-03-01T14:00:00-06:00
 authors:
 - Kaniel Kirby
 tags:
@@ -12,6 +12,7 @@ tags:
   - caching
   - migration
 draft: false
+featured: true
 ---
 
 ## The Starting Point

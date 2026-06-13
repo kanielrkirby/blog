@@ -1,7 +1,7 @@
 ---
 title: "Debugging Production: The JIT Parameter"
 desc: 'PostgreSQL: FATAL: unrecognized configuration parameter "jit"'
-published: 2026-02-17T14:00:00-06:00
+published: 2026-05-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:

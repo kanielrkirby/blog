@@ -1,7 +1,7 @@
 ---
-title: "Most Exciting New Tools for 2025"
+title: "Most Exciting New Tools for 2026"
 desc: "A list of cutting-edge developer tools that have revolutionized my workflow. Senior developers hate this one simple trick!"
-published: 2026-01-06T14:00:00-06:00
+published: 2026-01-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:
@@ -10,7 +10,7 @@ tags:
   - cli
   - minimalism
 draft: false
-featured: true
+# featured: true
 ---
 
 I've been exploring some new, incredibly powerful tools lately. Senior developers hate this one simple trick!

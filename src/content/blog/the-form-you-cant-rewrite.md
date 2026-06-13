@@ -1,7 +1,7 @@
 ---
 title: "The Form You Can't Rewrite"
-desc: "How a product form stopped being a form and became infrastructure you are afraid to touch."
-published: 2026-06-12T14:00:00-06:00
+desc: "How a product form stopped being a form and became an evil, scary state machine."
+published: 2026-04-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:
@@ -9,7 +9,7 @@ tags:
   - architecture
   - erp
   - complexity
-draft: true
+draft: false
 ---
 
 ## The Problem

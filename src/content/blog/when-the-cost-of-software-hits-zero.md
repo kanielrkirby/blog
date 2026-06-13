@@ -1,7 +1,7 @@
 ---
 title: "When the Cost of Software Hits Zero"
 desc: "Software is getting cheap to create, but not every kind of software is getting cheap the same."
-published: 2026-06-12T14:00:00-06:00
+published: 2026-06-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:

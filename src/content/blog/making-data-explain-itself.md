@@ -1,7 +1,7 @@
 ---
 title: "Data Provenance: Making Data Explain Itself"
 desc: "How building error tracking and source metadata into your data primitives can save your sanity within complex pipelines."
-published: 2026-04-21T14:00:00-06:00
+published: 2026-04-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 tags:
@@ -9,7 +9,7 @@ tags:
   - error-handling
   - python
   - debugging
-draft: false
+draft: true
 ---
 
 ## The Problem
