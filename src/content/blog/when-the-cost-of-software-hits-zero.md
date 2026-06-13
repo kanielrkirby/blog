@@ -4,11 +4,6 @@ desc: "Software is getting cheap to create, but not every kind of software is ge
 published: 2026-06-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - ai
-  - software
-  - product
-  - automation
 draft: false
 ---
 

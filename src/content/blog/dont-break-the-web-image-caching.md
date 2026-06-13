@@ -4,13 +4,6 @@ desc: "Exploring the cost of fighting the web’s default patterns."
 published: 2026-03-01T14:00:00-06:00
 authors:
 - Kaniel Kirby
-tags:
-  - mongodb
-  - gridfs
-  - web
-  - performance
-  - caching
-  - migration
 draft: false
 featured: true
 ---

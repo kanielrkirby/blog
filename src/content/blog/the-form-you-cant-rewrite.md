@@ -4,11 +4,6 @@ desc: "How a product form stopped being a form and became an evil, scary state m
 published: 2026-04-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - frontend
-  - architecture
-  - erp
-  - complexity
 draft: false
 ---
 

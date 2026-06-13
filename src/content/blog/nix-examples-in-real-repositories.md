@@ -6,10 +6,6 @@ published: 2024-07-22T14:00:00-05:00
 # modified:
 authors:
   - Kaniel Kirby
-tags:
-  - NixOS
-  - Development Environments
-  - Tutorial
 # featured: true
 img: https://raw.githubusercontent.com/NixOS/nixos-artwork/56b7a5788005a3eaecb5298f0dbed0f7d1573abc/wallpapers/nix-wallpaper-nineish-dark-gray.png
 alt: Nineish NixOS Wallpaper from the NixOS/nixos-artwork repo.

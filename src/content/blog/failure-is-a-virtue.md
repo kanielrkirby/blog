@@ -4,10 +4,6 @@ desc: Why avoiding failure stunts growth, and how to get better at failing.
 published: 2024-07-29T14:00:00-05:00
 authors:
   - Kaniel Kirby
-tags:
-  - career
-  - failure
-  - growth
 draft: false
 archived: true
 ---

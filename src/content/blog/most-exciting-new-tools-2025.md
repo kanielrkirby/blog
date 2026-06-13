@@ -4,11 +4,6 @@ desc: "A list of cutting-edge developer tools that have revolutionized my workfl
 published: 2026-01-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - linux
-  - unix
-  - cli
-  - minimalism
 draft: false
 # featured: true
 ---

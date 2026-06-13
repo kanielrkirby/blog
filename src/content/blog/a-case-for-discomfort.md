@@ -4,10 +4,6 @@ desc: "Why avoiding the uncomfortable parts of learning keeps you stuck."
 published: 2024-03-26T14:00:00-05:00
 authors:
   - Kaniel Kirby
-tags:
-  - career
-  - learning
-  - growth
 draft: false
 archived: true
 ---

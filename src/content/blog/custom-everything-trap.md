@@ -4,11 +4,6 @@ desc: "How a product configurator became its own programming language, and why r
 published: 2026-01-20T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - architecture
-  - complexity
-  - frontend
-  - erp
 draft: false
 archived: true
 ---

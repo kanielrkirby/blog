@@ -4,12 +4,6 @@ desc: "What Odoo taught me about all-in-one software."
 published: 2026-02-01T14:00:00-06:00
 authors:
 - Kaniel Kirby
-tags:
-- erp
-- odoo
-- business-software
-- integrations
-- migrations
 draft: false
 featured: true
 ---

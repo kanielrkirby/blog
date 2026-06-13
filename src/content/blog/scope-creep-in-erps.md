@@ -4,11 +4,6 @@ desc: "How to run discovery for complex projects without drowning in scope creep
 published: 2026-01-13T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - project-management
-  - erp
-  - consulting
-  - scope
 draft: false
 archived: true
 ---

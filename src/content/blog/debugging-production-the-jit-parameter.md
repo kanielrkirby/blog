@@ -4,11 +4,6 @@ desc: 'PostgreSQL: FATAL: unrecognized configuration parameter "jit"'
 published: 2026-05-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - debugging
-  - postgresql
-  - devops
-  - odoo
 draft: false
 featured: true
 ---

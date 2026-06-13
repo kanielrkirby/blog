@@ -4,11 +4,6 @@ desc: "How building error tracking and source metadata into your data primitives
 published: 2026-04-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - api
-  - error-handling
-  - python
-  - debugging
 draft: true
 ---
 

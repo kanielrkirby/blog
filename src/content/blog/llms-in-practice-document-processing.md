@@ -4,11 +4,6 @@ desc: "LLMs are powerful, but they're not always the right tool. Here's what we 
 published: 2026-03-17T14:00:00-06:00
 authors:
   - Kaniel Kirby
-tags:
-  - ai
-  - llm
-  - ocr
-  - document-processing
 draft: false
 archived: true
 ---

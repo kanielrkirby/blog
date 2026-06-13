@@ -6,17 +6,6 @@ published: 2023-11-21T14:00:00-05:00
 # modified:
 authors:
   - Kaniel Kirby
-tags:
-  - tutorial
-  - beginner
-  - linux
-  - unix
-  - cron
-  - github
-  - actions
-  - workflows
-  - automation
-  - scheduling
 # featured: true
 img: /images/posts/cron-jobs/pexels-andrey-grushnikov-707676.jpg
 alt: "Photo by Andrey Grushnikov: https://www.pexels.com/photo/black-and-white-photo-of-clocks-707676"
