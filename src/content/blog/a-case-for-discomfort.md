@@ -9,6 +9,7 @@ tags:
   - learning
   - growth
 draft: false
+archived: true
 ---
 
 When I started programming, I wanted to learn everything. Sass? Drop everything. TypeScript? Why wasn't I using this already? Astro? I know three frameworks but I need better buttons.

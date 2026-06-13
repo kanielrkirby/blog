@@ -9,6 +9,7 @@ tags:
   - failure
   - growth
 draft: false
+archived: true
 ---
 
 I used to tweak PRs for hours before submitting. "What if they say this?" I'd spiral, and my code quality declined alongside my mental health. After all that, the review came back: "This is not the right solution."

@@ -15,6 +15,7 @@ img: https://raw.githubusercontent.com/NixOS/nixos-artwork/56b7a5788005a3eaecb52
 alt: Nineish NixOS Wallpaper from the NixOS/nixos-artwork repo.
 # canonicalURL:
 # draft: true
+archived: true
 ---
 
 In my [last blog post](https://dome.software/blog/nix-development-environments/), I talked about the fundamentals of building a Nix flake for development environments. While I can certainly see this as being helpful, I personally find that real-world examples are the best way of learning how these workflows _actually work_.

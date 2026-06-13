@@ -10,6 +10,7 @@ tags:
   - ocr
   - document-processing
 draft: false
+archived: true
 ---
 
 ## Just Use AI

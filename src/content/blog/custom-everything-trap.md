@@ -10,6 +10,7 @@ tags:
   - frontend
   - erp
 draft: false
+archived: true
 ---
 
 ## The Innocent Beginning

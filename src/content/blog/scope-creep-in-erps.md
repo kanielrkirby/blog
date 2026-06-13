@@ -10,6 +10,7 @@ tags:
   - consulting
   - scope
 draft: false
+archived: true
 ---
 
 ## The Problem
