@@ -19,7 +19,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content">
     <section class="pb-6 pt-8 [&_p]:my-2">
-      <h1 class="my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl">
+      <h1
+        class="my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl"
+        data-nosnippet
+      >
         The Cached Exception
       </h1>
       <a
