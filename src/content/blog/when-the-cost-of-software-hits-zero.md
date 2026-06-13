@@ -1,6 +1,6 @@
 ---
 title: "When the Cost of Software Hits Zero"
-desc: "Software is getting cheap to create, but not every kind of software is getting cheap in the same way."
+desc: "Software is getting cheap to create, but not every kind of software is getting cheap the same."
 published: 2026-06-12T14:00:00-06:00
 authors:
   - Kaniel Kirby
@@ -9,22 +9,14 @@ tags:
   - software
   - product
   - automation
-draft: true
+draft: false
 ---
 
 ## The New Baseline
 
-There is a real sense in which software is getting close to free.
+There is a real sense in which software is getting close to free. Not hosting. Not support. Not compliance. Not the long tail of maintenance. Simply turning an idea into a working tool.
 
-Not hosting. Not support. Not compliance. Not the long tail of maintenance.
-
-I mean the first part: turning an idea into a working tool.
-
-That part has changed dramatically. If the problem is narrow enough, and the environment is familiar enough, and the stakes are low enough, you can now build a useful tool in a day that used to take a week, a month, or a contractor.
-
-That sounds like a small thing. It isn't.
-
-It changes the economics of small software.
+When the problem is narrow enough, and the environment is familiar enough, and the stakes are low enough, you can now build a useful tool in a day that used to take a week, a month, or a contractor.
 
 ## What Actually Got Cheaper
 
@@ -38,41 +30,18 @@ The cheapest software is usually software that:
 
 That is why the little utilities matter so much.
 
-If you need a launcher for Nix flakes, a menu wrapper for Bitwarden, an OTP menu, or a clipboard TTS tool, you no longer need to justify a platform project. You need a sharp idea, a few hours, and enough judgment to know when the result is good enough.
-
-That is the real shift: the cost of trying is collapsing.
+If you need some helper scripts and infrastructure for confusing Nix stuff, or a menu wrapper for your password manager / 2FA manager, or a basically free TTS tool for your laptop (all of which I have developed for myself in a relatively short timespan), you no longer need to justify a platform project. You need a sharp idea, a few hours, and enough judgment to know when the result is good enough. Anyone can do that.
 
 ## Why That Matters
 
 When trying is cheap, the center of gravity moves.
 
-You stop asking, "Is this worth building as a product?"
-You start asking, "Is this worth making for my own use?"
-
-That is a much lower bar, and it unlocks a lot of software that would never have been funded before.
-
-Some of it is throwaway. Some of it becomes indispensable.
+You stop asking, "Is this worth building?"
+You start asking, "What specific problem would change my life if I had a basic solution to it?"
 
 The interesting part is that the code can be disposable while the value is not. A tiny script can save you an hour every day. A small local tool can remove an annoying edge in a workflow that no vendor ever cared about.
 
-## Where It Really Does Hit Zero
-
-The cost of software approaches zero when the problem is:
-
-- personal or internal
-- repetitive
-- bounded
-- easy to verify
-- tolerant of rough edges
-
-In those cases, AI is less like a miracle and more like a force multiplier on templates, memory, and momentum.
-
-You are not paying for invention.
-You are paying for translation.
-
-And translation is cheap when the domain is simple.
-
-## Where It Doesn't
+## Where Cost Still Lives (and Why I Don't Think Software is Dead Yet)
 
 The cost does not hit zero when the software is expected to carry real burden.
 
@@ -96,7 +65,7 @@ The work is:
 - handling real users with real habits
 - maintaining the system after the novelty wears off
 
-This is why "it works" is not the same thing as "it is cheap."
+This is why "it works" is not the same thing as "it is maintainable."
 
 ## The Hidden Bill
 
@@ -104,23 +73,17 @@ The hidden bill is usually not the code.
 
 It is the context around the code.
 
-What happens when the API changes? What happens when the OS changes? What happens when your clipboard behavior differs on Wayland? What happens when a password prompt encodes characters in a way you didn't expect? What happens when the thing you built for yourself becomes the thing you rely on every day?
+What happens when the API changes? What happens when the OS changes? Or, more largely, what happens when you are truly _responsible_ and _accountable_ for keeping your software in working order?
 
-That is where the cheap software starts to become real software.
-
-And real software still costs something.
+_An aside here..._ I'm starting to think that part of the value developers are providing _today_ isn't just "solving problems"... it's accountability. Someone promised some feature, some constraint, some bottom line, and they are responsible for making sure that one way or another, with all the business's surrounding context, it's solved. More about that later, surely.
 
 ## The Personal-Sized Future
 
-The most important consequence of all this may be that software gets smaller again.
-
-Not in capability. In target size.
+The most important consequence of all this may be that software gets smaller again. Not in capability. In target size.
 
 The default unit of software is shifting from "company product" to "personal tool." People will keep building tiny programs that exist for one workflow, one operator, one environment, one annoyance.
 
-That is not a downgrade.
-
-It is what happens when the cost of custom software gets low enough that you stop negotiating with generic tools.
+I imagine it will appear in much the same way that some companies run their entire business off of an Excel spreadsheet, because it was something they could do without a software development team.
 
 ## The Practical Rule
 
@@ -141,9 +104,3 @@ If the software is:
 - and painful to get wrong
 
 then software is still expensive.
-
-That is the line.
-
-And it is a useful line, because it tells you where AI is changing the world first: not in giant universal platforms, but in the little places where a sharp tool used to be too much trouble to make.
-
-Those are the places where software is, for the first time, starting to feel free.
