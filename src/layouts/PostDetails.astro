@@ -8,6 +8,7 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
+import getPostTags from "@utils/getPostTags";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -23,8 +24,9 @@ const {
   canonicalURL,
   published,
   modified,
-  tags,
 } = post.data;
+
+const tags = getPostTags(post);
 
 const { Content } = await post.render();
 
