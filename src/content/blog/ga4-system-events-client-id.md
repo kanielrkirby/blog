@@ -2,7 +2,7 @@
 # slug:
 title: "GA4 Measurement Protocol: System-Level Events and client_id"
 desc: "Debugging System-level Event in the DebugView of Firebase Analytics."
-published: 2026-07-01T14:00:00-06:00
+published: 2026-08-01T14:00:00-06:00
 # modified:
 authors:
   - Kaniel Kirby

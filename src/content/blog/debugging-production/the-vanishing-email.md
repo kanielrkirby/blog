@@ -1,7 +1,7 @@
 ---
 title: "Debugging Production: The Vanishing Email"
 desc: "An automatic email worked fine locally and on sandbox. On production, the client said it wasn't sending at all."
-published: 2026-06-17T14:00:00-06:00
+published: 2026-07-01T14:00:00-06:00
 authors:
   - Kaniel Kirby
 draft: false
